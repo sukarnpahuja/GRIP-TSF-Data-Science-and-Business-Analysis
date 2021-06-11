@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="PetalWidthCm <= 0.8\nsamples = 105\nvalue = [32, 41, 32]\nclass = Iris-versicolor", fillcolor="#e7fcef"] ;
+1 [label="samples = 32\nvalue = [32, 0, 0]\nclass = Iris-setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="PetalWidthCm <= 1.75\nsamples = 73\nvalue = [0, 41, 32]\nclass = Iris-versicolor", fillcolor="#d4f9e3"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="PetalLengthCm <= 5.05\nsamples = 44\nvalue = [0, 40, 4]\nclass = Iris-versicolor", fillcolor="#4de88e"] ;
+2 -> 3 ;
+4 [label="PetalWidthCm <= 1.65\nsamples = 40\nvalue = [0, 39, 1]\nclass = Iris-versicolor", fillcolor="#3ee684"] ;
+3 -> 4 ;
+5 [label="samples = 38\nvalue = [0, 38, 0]\nclass = Iris-versicolor", fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label="PetalLengthCm <= 4.75\nsamples = 2\nvalue = [0, 1, 1]\nclass = Iris-versicolor", fillcolor="#ffffff"] ;
+4 -> 6 ;
+7 [label="samples = 1\nvalue = [0, 0, 1]\nclass = Iris-virginica", fillcolor="#8139e5"] ;
+6 -> 7 ;
+8 [label="samples = 1\nvalue = [0, 1, 0]\nclass = Iris-versicolor", fillcolor="#39e581"] ;
+6 -> 8 ;
+9 [label="SepalLengthCm <= 6.05\nsamples = 4\nvalue = [0, 1, 3]\nclass = Iris-virginica", fillcolor="#ab7bee"] ;
+3 -> 9 ;
+10 [label="samples = 1\nvalue = [0, 1, 0]\nclass = Iris-versicolor", fillcolor="#39e581"] ;
+9 -> 10 ;
+11 [label="samples = 3\nvalue = [0, 0, 3]\nclass = Iris-virginica", fillcolor="#8139e5"] ;
+9 -> 11 ;
+12 [label="PetalLengthCm <= 4.85\nsamples = 29\nvalue = [0, 1, 28]\nclass = Iris-virginica", fillcolor="#8640e6"] ;
+2 -> 12 ;
+13 [label="SepalLengthCm <= 6.05\nsamples = 2\nvalue = [0, 1, 1]\nclass = Iris-versicolor", fillcolor="#ffffff"] ;
+12 -> 13 ;
+14 [label="samples = 1\nvalue = [0, 1, 0]\nclass = Iris-versicolor", fillcolor="#39e581"] ;
+13 -> 14 ;
+15 [label="samples = 1\nvalue = [0, 0, 1]\nclass = Iris-virginica", fillcolor="#8139e5"] ;
+13 -> 15 ;
+16 [label="samples = 27\nvalue = [0, 0, 27]\nclass = Iris-virginica", fillcolor="#8139e5"] ;
+12 -> 16 ;
+}
